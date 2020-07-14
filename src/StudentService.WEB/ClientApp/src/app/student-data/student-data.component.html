@@ -1,0 +1,117 @@
+<div class="student-data-container">
+  <div class="student-add">
+    <table class='table table-striped'>
+      <tbody>
+        <tr>
+          <td>
+            <div>Name</div>
+            <input type="text" class="form-control" placeholder="full name"
+                   [(ngModel)]="newStudent.name" #name="ngModel" required />
+            <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+              Name is not valid
+            </div>
+          </td>
+          <td>
+            <div>Date of birth</div>
+            <input type="date" class="form-control"
+                   [(ngModel)]="newStudent.dateOfBirth" #dateOfBirth="ngModel" required />
+            <div [hidden]="dateOfBirth.valid || dateOfBirth.untouched" class="alert alert-danger">
+              Date of birth is not valid
+            </div>
+          </td>
+          <td>
+            <div>Email</div>
+            <input type="email" class="form-control" placeholder="name@mail.com"
+                   [(ngModel)]="newStudent.email" #email="ngModel" pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}" required />
+            <div [hidden]="email.valid || email.untouched" class="alert alert-danger">
+              Email is not valid
+            </div>
+          </td>
+          <td>
+            <button class="btn btn-primary" [disabled]="name.invalid || dateOfBirth.invalid || email.invalid"
+                    (click)="saveStudent()">
+              Add
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="student-table">
+    <div>
+      <label class="control">
+        Max rows
+        <input type="number" class="input form-control" min="1" [(ngModel)]="config.itemsPerPage">
+      </label>
+    </div>
+    
+    <table class='table table-striped'>
+      <thead>
+        <tr>
+          <th><span>Name</span></th>
+          <th><span>Date of birth</span></th>
+          <th><span>Email</span></th>
+          <th><span></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of students | paginate: config">
+          <ng-template [ngIf]="student?.id != s.id" [ngIfElse]="editTemplate">
+            <td>{{s?.name}}</td>
+            <td>{{s?.dateOfBirth | date:"dd/MM/yyyy" }}</td>
+            <td>{{s?.email}}</td>
+            <td class="button-group">
+              <button class="btn btn-sm btn-primary" (click)="editStudent(s)">Edit</button>
+              <button class="btn btn-sm btn-danger" (click)="deleteStudent(s)">Delete</button>
+            </td>
+          </ng-template>
+        </tr>
+      </tbody>
+    </table>
+    <div class="has-text-centered">
+      <pagination-controls [id]="config.id"
+                           [maxSize]="maxSize"
+                           [directionLinks]="directionLinks"
+                           [autoHide]="autoHide"
+                           [responsive]="responsive"
+                           [previousLabel]="labels.previousLabel"
+                           [nextLabel]="labels.nextLabel"
+                           [screenReaderPaginationLabel]="labels.screenReaderPaginationLabel"
+                           [screenReaderPageLabel]="labels.screenReaderPageLabel"
+                           [screenReaderCurrentLabel]="labels.screenReaderCurrentLabel"
+                           (pageChange)="onPageChange($event)"
+                           (pageBoundsCorrection)="onPageBoundsCorrection($event)"></pagination-controls>
+    </div>
+  </div>
+</div>
+
+<ng-template #editTemplate>
+  <td>
+    <input type="text" class="form-control"
+           [(ngModel)]="student.name" #name="ngModel" required />
+    <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+      Name is not valid
+    </div>
+  </td>
+  <td>
+    <input type="date" class="form-control"
+           [ngModel]="student.dateOfBirth | date:'yyyy-MM-dd'"
+           (ngModelChange)="student.dateOfBirth = $event" #dateOfBirth="ngModel" required />
+    <div [hidden]="dateOfBirth.valid || dateOfBirth.untouched" class="alert alert-danger">
+      Date of birth is not valid
+    </div>
+  </td>
+  <td>
+    <input type="email" class="form-control"
+           [(ngModel)]="student.email" #email="ngModel" pattern="[a-zA-Z_]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}" required />
+    <div [hidden]="email.valid || email.untouched" class="alert alert-danger">
+      Email is not valid
+    </div>
+  </td>
+  <td class="button-group">
+    <input type="button" [disabled]="name.invalid || dateOfBirth.invalid || email.invalid" value="Save" (click)="saveStudent()" class="btn btn-sm btn-success" />
+    <input type="button" value="Cancel" (click)="cancel()" class="btn btn-sm btn-warning" />
+  </td>
+</ng-template>
+

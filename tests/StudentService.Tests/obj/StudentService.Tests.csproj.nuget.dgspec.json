@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\tests\\StudentService.Tests\\StudentService.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj",
+        "projectName": "StudentService.BLL",
+        "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj",
+        "packagesPath": "C:\\Users\\Ildar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ildar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj",
+        "projectName": "StudentService.DAL",
+        "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj",
+        "packagesPath": "C:\\Users\\Ildar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ildar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\StudentService.WEB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\StudentService.WEB.csproj",
+        "projectName": "StudentService.WEB",
+        "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\StudentService.WEB.csproj",
+        "packagesPath": "C:\\Users\\Ildar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ildar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj"
+              },
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\tests\\StudentService.Tests\\StudentService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\tests\\StudentService.Tests\\StudentService.Tests.csproj",
+        "projectName": "StudentService.Tests",
+        "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\tests\\StudentService.Tests\\StudentService.Tests.csproj",
+        "packagesPath": "C:\\Users\\Ildar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\tests\\StudentService.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ildar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.BLL\\StudentService.BLL.csproj"
+              },
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.DAL\\StudentService.DAL.csproj"
+              },
+              "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\StudentService.WEB.csproj": {
+                "projectPath": "C:\\Users\\Ildar\\Documents\\PROJECTS\\StudentService\\src\\StudentService.WEB\\StudentService.WEB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.1, )"
+            },
+            "moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
